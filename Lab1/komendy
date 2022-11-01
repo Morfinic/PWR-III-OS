@@ -1,0 +1,10 @@
+1. ls -a ~
+2. ls -l $HOME
+3. mkdir ~/264176
+   mv komendy ~/264176/
+4. touch $HOME/264176/pusty
+5. echo -e "Lorem Ipsum\nBigos Ipsum\n\nEOF" > $HOME/264176/niepusty
+6. mkdir ~/264176/kopie
+7. cp ~/264176/niepusty ~/264176/kopie/
+8. echo "NEW EOF" >> ~/264176/niepusty
+9. cmp ~/264176/niepusty ~/264176/kopie/niepusty
