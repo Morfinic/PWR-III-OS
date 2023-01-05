@@ -1,0 +1,11 @@
+zad.1
+1. cat error.txt | grep -E "error|ERROR" > pierwszy
+2. cat error.txt | grep -E "ERROR" | grep -Ev "error"
+3. cat error.txt | grep -E "error" > drugi
+4. cat drugi | sed "s/error/ERROR/g" > trzeci
+5. realpath pierwszy drugi trzeci | sed "s/Lab4/exercise/g" >> czwarty
+
+zad.2
+1. cat /etc/passwd | grep -E "nologin" | grep -Ev "ssh"
+2. cat /etc/passwd | grep -E "nologin" | grep -Ev "ssh" | sed -n "4,10p"
+3. cat /etc/passwd | tail -n 5 | sort -t : -n -k 3

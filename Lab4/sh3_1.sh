@@ -1,0 +1,9 @@
+#!/bin/bash
+
+n=1
+
+while read -r line;
+do
+    echo "$n: $line";
+    n=$((n+1));
+done < petla
